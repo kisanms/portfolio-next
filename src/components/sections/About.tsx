@@ -40,7 +40,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-lg">
-              I'm a passionate Software Engineer with a strong foundation in full-stack development
+              I&apos;m a passionate Software Engineer with a strong foundation in full-stack development
               and a keen interest in creating innovative solutions to complex problems.
             </p>
             <p className="text-gray-300 text-lg">
@@ -49,7 +49,7 @@ const About = () => {
               building scalable web applications and enjoy working with modern technologies.
             </p>
             <p className="text-gray-300 text-lg">
-              When I'm not coding, I'm constantly learning new technologies and contributing
+              When I&apos;m not coding, I&apos;m constantly learning new technologies and contributing
               to the developer community through open-source projects and knowledge sharing.
             </p>
           </motion.div>
