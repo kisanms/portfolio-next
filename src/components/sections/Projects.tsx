@@ -20,28 +20,31 @@ interface ProjectCardProps {
 // Sample project data - you can modify this with your actual projects
 const projects: Project[] = [
   {
-    title: "Project One",
-    description: "A full-stack web application built with Next.js, TypeScript, and MongoDB. Features real-time updates and responsive design.",
-    tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
-    image: "/project1.jpg", // Add your project images to the public folder
-    link: "https://project1.com",
-    github: "https://github.com/yourusername/project1"
+    title: "1. Active-Tracker",
+    description:
+      "A full-stack application built with React-native, Expo-Go, and Firebase. Features real-time location updates and responsive design.",
+    tags: ["Expo-Go", "React-native", "Firebase", "Notifee"],
+    image: "/src/assets/thumnail port.png", // Add your project images to the public folder
+    link: "https://play.google.com/store/apps/details?id=com.deepkm.Live_Tracker",
+    github: "https://github.com/kisanms/Live_Tracker",
   },
   {
     title: "Project Two",
-    description: "An AI-powered analytics dashboard with interactive visualizations and real-time data processing.",
+    description:
+      "An AI-powered analytics dashboard with interactive visualizations and real-time data processing.",
     tags: ["React", "Python", "TensorFlow", "D3.js"],
     image: "/project2.jpg",
     link: "https://project2.com",
-    github: "https://github.com/yourusername/project2"
+    github: "https://github.com/yourusername/project2",
   },
   {
     title: "Project Three",
-    description: "A mobile-first e-commerce platform with advanced filtering and search capabilities.",
+    description:
+      "A mobile-first e-commerce platform with advanced filtering and search capabilities.",
     tags: ["React Native", "Node.js", "PostgreSQL", "Redux"],
     image: "/project3.jpg",
     link: "https://project3.com",
-    github: "https://github.com/yourusername/project3"
+    github: "https://github.com/yourusername/project3",
   },
   // Add more projects as needed
 ];
@@ -59,7 +62,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <h3 className="text-lg sm:text-xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
             {project.title}
           </h3>
-          <p className="text-gray-400 mb-4 text-sm sm:text-base flex-grow">{project.description}</p>
+          <p className="text-gray-400 mb-4 text-sm sm:text-base flex-grow">
+            {project.description}
+          </p>
           <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
             {project.tags.map((tag, index) => (
               <span

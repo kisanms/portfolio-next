@@ -5,7 +5,7 @@ const About = () => {
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8 }
+    transition: { duration: 0.8 },
   };
 
   return (
@@ -40,17 +40,20 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-lg">
-              I&apos;m a passionate Software Engineer with a strong foundation in full-stack development
-              and a keen interest in creating innovative solutions to complex problems.
+              I&apos;m a passionate Software Engineer with a strong foundation
+              in full-stack Web/App development and a keen interest in creating
+              innovative solutions to complex problems.
             </p>
             <p className="text-gray-300 text-lg">
-              My journey in technology began with a curiosity about how things work,
-              which led me to pursue a career in software development. I specialize in
-              building scalable web applications and enjoy working with modern technologies.
+              My journey in technology began with a curiosity about how things
+              work, which led me to pursue a career in software development. I
+              specialize in building scalable web applications and enjoy working
+              with modern technologies.
             </p>
             <p className="text-gray-300 text-lg">
-              When I&apos;m not coding, I&apos;m constantly learning new technologies and contributing
-              to the developer community through open-source projects and knowledge sharing.
+              When I&apos;m not coding, I&apos;m constantly learning new
+              technologies and contributing to the developer community through
+              open-source projects and knowledge sharing.
             </p>
           </motion.div>
 
@@ -70,6 +73,7 @@ const About = () => {
                 <h4 className="text-cyan-400 font-semibold">Frontend</h4>
                 <ul className="text-gray-300 space-y-1">
                   <li>React / Next.js</li>
+                  <li>React-Native</li>
                   <li>TypeScript</li>
                   <li>Tailwind CSS</li>
                   <li>HTML5 / CSS3</li>
@@ -79,18 +83,19 @@ const About = () => {
                 <h4 className="text-cyan-400 font-semibold">Backend</h4>
                 <ul className="text-gray-300 space-y-1">
                   <li>Node.js</li>
-                  <li>Python</li>
+                  <li>Firebase</li>
+                  <li>Supabase</li>
                   <li>MongoDB</li>
-                  <li>PostgreSQL</li>
+                  <li>GraphQL</li>
                 </ul>
               </div>
               <div className="space-y-2">
                 <h4 className="text-cyan-400 font-semibold">Tools</h4>
                 <ul className="text-gray-300 space-y-1">
                   <li>Git</li>
-                  <li>Docker</li>
+                  <li>Cursor</li>
                   <li>VS Code</li>
-                  <li>Postman</li>
+                  <li>Ai</li>
                 </ul>
               </div>
               <div className="space-y-2">

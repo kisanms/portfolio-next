@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const wordInterval = setInterval(() => {
       setCurrentWordIndex((prev) => (prev + 1) % techWords.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(wordInterval);
   }, [techWords.length]);
