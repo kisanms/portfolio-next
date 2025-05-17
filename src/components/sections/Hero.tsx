@@ -8,7 +8,7 @@ const Hero = () => {
     "Full Stack Developer",
     "Problem Solver",
     "Tech Enthusiast",
-    "Software Engineer"
+    "Software Engineer",
   ];
 
   // Rotating words effect
@@ -47,8 +47,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-semibold mb-6 md:mb-8 min-h-[3.5rem]"
         >
-          <span className="text-gray-300">I&apos;m a </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+          <span className="text-gray-300 text-2xl sm:text-3xl">
+            I&apos;m a{" "}
+          </span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-2xl sm:text-3xl">
             {techWords[currentWordIndex]}
           </span>
         </motion.div>
@@ -59,15 +61,16 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-400 max-w-2xl mx-auto mb-8 md:mb-12"
         >
-          Passionate about creating innovative solutions and building cutting-edge applications.
-          Let&apos;s turn ideas into reality through elegant code.
+          Passionate about creating innovative solutions and building
+          cutting-edge applications. Let&apos;s turn ideas into reality through
+          elegant code.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center"
         >
           <a
             href="#projects"
@@ -88,7 +91,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block"
+          className="absolute bottom-4 sm:bottom-2 left-1/2 transform -translate-x-1/3 hidden sm:block"
         >
           <div className="w-5 h-9 sm:w-6 sm:h-10 border-2 border-cyan-500 rounded-full flex justify-center p-1">
             <motion.div
