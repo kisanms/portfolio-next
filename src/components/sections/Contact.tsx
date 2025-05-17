@@ -76,11 +76,24 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Replace with actual form submission logic
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error('Error sending message:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
