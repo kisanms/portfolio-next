@@ -1,7 +1,7 @@
 # Modern Portfolio Website
 
 <div align="center">
-  <img src="public/readme-banner.png" alt="Portfolio Banner" width="800"/>
+  <img src="https://cdn.vectorstock.com/i/500p/91/31/portfolio-paper-poster-with-colorful-brush-strokes-vector-21849131.jpg" alt="Portfolio Banner" width="500"/>
   <p><em>A next-generation personal portfolio showcasing skills, projects, and achievements</em></p>
 </div>
 
