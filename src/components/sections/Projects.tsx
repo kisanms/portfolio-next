@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import thumbnailPort from "../../assets/thumnail port.png"; // Ensure this file exists
 import thumbnailPort2 from "../../assets/Feature g.png"; // Ensure this file exists
+import thumbnailPort3 from "../../assets/Feature g (1).png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -28,7 +29,7 @@ const projects: Project[] = [
     title: "1. Active-Tracker",
     description:
       "A full-stack application built with React-native, Expo-Go, and Firebase. Features real-time location updates and responsive design.",
-    tags: ["Expo-Go", "React-native", "Firebase", "Notifee"],
+    tags: ["Expo-Go", "React-native", "Firebase", "Notifee", "Google-Maps"],
     image: thumbnailPort,
     link: "https://play.google.com/store/apps/details?id=com.deepkm.Live_Tracker",
     github: "https://github.com/kisanms/Live_Tracker",
@@ -43,13 +44,13 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/Home_Service_App", // Update with actual link
   },
   {
-    title: "Project Three",
+    title: "3. Crosspix-Wallpaper App",
     description:
-      "An AI-powered analytics dashboard with interactive visualizations and real-time data processing.",
-    tags: ["React", "Python", "TensorFlow", "D3.js"],
-    image: thumbnailPort,
-    link: "https://example.com/project-two", // Update with actual link
-    github: "https://github.com/kisanms/project-two", // Update with actual link
+      "An AI-generated images through PixaBay API which can be use for wallpaper.",
+    tags: ["React-Native", "API", "Expo", "TailwindCSS"],
+    image: thumbnailPort3,
+    link: "https://www.linkedin.com/posts/kisansmajumdar_mobileappdevelopment-wallpaperapp-design-activity-7197463389055397888-Ac5e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWTvooB-46p3owaCuS3o3Dz2VmnvqRWo8M", // Update with actual link
+    github: "https://github.com/kisanms/Crosspix_Wallpaper_App", // Update with actual link
   },
 ];
 
