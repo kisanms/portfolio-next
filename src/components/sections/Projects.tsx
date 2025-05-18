@@ -46,7 +46,7 @@ const projects: Project[] = [
   {
     title: "3. Crosspix-Wallpaper App",
     description:
-      "An AI-generated images through PixaBay API which can be use for wallpaper, with Responsive design and Mansoory Layout (Spotify).",
+      "An AI-generated images through PixaBay API which can be use for wallpaper, with Responsive design and Mansoory Layout (Shopify).",
     tags: ["React-Native", "Pixabay", "Expo", "TailwindCSS", "Mansory"],
     image: thumbnailPort3,
     link: "https://crosspix-wallpaper.netlify.app/home", // Update with actual link
