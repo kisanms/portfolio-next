@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const techWords = [
-    "Full Stack Developer",
+    "React-Native Developer",
     "Problem Solver",
     "Tech Enthusiast",
     "Software Engineer",

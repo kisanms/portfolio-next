@@ -12,28 +12,31 @@ const Education = () => {
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8 }
+    transition: { duration: 0.8 },
   };
 
   const educationData: EducationEntry[] = [
     {
-      institution: "University of Technology",
-      degree: "Master of Computer Science",
-      date: "2020 - 2022",
-      description: "Specialized in Artificial Intelligence and Machine Learning with focus on neural networks and computer vision systems."
+      institution: "CGPIT-(Uka Tarsadia University)",
+      degree: "B.Tech Computer Engineering",
+      date: "2021 - 2025",
+      description:
+        "Specialized in Mobile Dev and Cloud Computing Learning with focus on Cloud and Mobile OS architecture.",
     },
     {
-      institution: "City College",
-      degree: "Bachelor of Science in Computer Science",
-      date: "2016 - 2020",
-      description: "Core curriculum in algorithms, data structures, and software engineering. Senior project on web application development."
+      institution: "T and T V Savani High School",
+      degree: "Higher Secondary Certificate",
+      date: "2018 - 2020",
+      description:
+        "Core curriculum in Science Stream, with emphasis on Mathematics, Physics and Computrer Studies. ",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certificate in Web Development",
-      date: "2015",
-      description: "Intensive program covering modern front-end frameworks and responsive design principles."
-    }
+      institution: "Shantiniketan Ideal Academy School",
+      degree: "Secondary School Certificate",
+      date: "2016 - 2018",
+      description:
+        "Completed my secondary education with a focus on Mathematics and Science.",
+    },
   ];
 
   return (
@@ -71,14 +74,16 @@ const Education = () => {
               <div className="flex flex-col md:flex-row md:items-center gap-4">
                 <div className="flex-shrink-0">
                   <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-full h-16 w-16 flex items-center justify-center text-white font-bold text-xl">
-                    {item.date.includes(" - ") 
-                      ? item.date.split(" - ")[0].slice(-2) 
+                    {item.date.includes(" - ")
+                      ? item.date.split(" - ")[0].slice(-2)
                       : item.date.slice(-2)}
                   </div>
                 </div>
-                
+
                 <div className="flex-grow">
-                  <h3 className="text-xl font-bold text-white">{item.institution}</h3>
+                  <h3 className="text-xl font-bold text-white">
+                    {item.institution}
+                  </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-1">
                     <h4 className="text-cyan-400 font-medium">{item.degree}</h4>
                     <span className="text-gray-400 text-sm">{item.date}</span>
@@ -95,4 +100,3 @@ const Education = () => {
 };
 
 export default Education;
-
