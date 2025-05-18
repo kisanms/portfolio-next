@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import thumbnailPort from "../../assets/thumnail port.png"; // Ensure this file exists
+import thumbnailPort2 from "../../assets/Feature g.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -33,13 +34,13 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/Live_Tracker",
   },
   {
-    title: "Project Two",
+    title: "2. Ghar Seva App",
     description:
-      "An AI-powered analytics dashboard with interactive visualizations and real-time data processing.",
-    tags: ["React", "Python", "TensorFlow", "D3.js"],
-    image: thumbnailPort,
-    link: "https://example.com/project-two", // Update with actual link
-    github: "https://github.com/kisanms/project-two", // Update with actual link
+      "A Home Service App built with React Native, Hygraph, MongoDB. It allows users to book home services easily.",
+    tags: ["React-Native", "GrapghQL", "Hygrapgh", "MongoDB", "Clerk"],
+    image: thumbnailPort2,
+    link: "https://www.linkedin.com/posts/kisansmajumdar_techinnovation-teamwork-reactnative-activity-7271471986587938816-kJka?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWTvooB-46p3owaCuS3o3Dz2VmnvqRWo8M", // Update with actual link
+    github: "https://github.com/kisanms/Home_Service_App", // Update with actual link
   },
   {
     title: "Project Three",
