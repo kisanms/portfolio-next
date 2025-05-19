@@ -3,107 +3,10 @@ import { motion } from "framer-motion";
 import { useState, FormEvent } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<
-    "idle" | "success" | "error"
-  >("idle");
-
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.8 },
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-
-    // Clear error when user starts typing
-    if (errors[name as keyof typeof errors]) {
-      setErrors((prev) => ({
-        ...prev,
-        [name]: "",
-      }));
-    }
-  };
-
-  const validateForm = () => {
-    let valid = true;
-    const newErrors = { ...errors };
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-      valid = false;
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-      valid = false;
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
-      valid = false;
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-      valid = false;
-    }
-
-    setErrors(newErrors);
-    return valid;
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.error || "Failed to send message");
-      }
-
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("Error sending message:", error);
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-      // Reset status after 5 seconds
-      setTimeout(() => setSubmitStatus("idle"), 5000);
-    }
   };
 
   return (
@@ -131,7 +34,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-2xl mx-auto">
+        {/* <div className="max-w-2xl mx-auto">
           <motion.form
             initial="initial"
             whileInView="animate"
@@ -331,17 +234,14 @@ const Contact = () => {
               </motion.div>
             )}
           </motion.form>
-        </div>
-        <div className="mt-8 text-center">
-          <p className="text-2xl font-bold mb-4 bg-clip-text  text-gray-400">
-            Or you can reach me on: {}
-            <a
-              href="mailto:kisanmajumdar44@gmail.com"
-              className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
-            >
-              kisanmajumdar44@gmail.com
-            </a>
-          </p>
+        </div> */}
+        <div className="mt-2 text-center">
+          <a
+            href="mailto:kisanmajumdar44@gmail.com"
+            className="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600"
+          >
+            kisanmajumdar44@gmail.com
+          </a>
         </div>
       </div>
     </section>

@@ -87,7 +87,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative mt-20 border-t border-gray-800">
+    <footer className="relative mt-5 border-t border-gray-800">
       {/* Background accents */}
       <div className="absolute bottom-0 left-0 bg-cyan-500/5 rounded-full blur-3xl z-0 bg-blur-sm"></div>
       <div className="absolute top-0 right-0 bg-purple-500/5 rounded-full blur-3xl z-0 bg-blur-sm"></div>

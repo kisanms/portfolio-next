@@ -26,12 +26,12 @@ const skillCategories: SkillCategory[] = [
   {
     name: "Frontend Development",
     skills: [
-      { name: "React/Next.js", level: 90 },
+      { name: "React/Next.js", level: 70 },
+      { name: "React-Native", level: 85 },
       { name: "TypeScript", level: 85 },
-      { name: "HTML5/CSS3", level: 95 },
       { name: "Tailwind CSS", level: 90 },
-      { name: "JavaScript", level: 90 }
-    ]
+      { name: "JavaScript", level: 90 },
+    ],
   },
   {
     name: "Backend Development",
@@ -40,8 +40,8 @@ const skillCategories: SkillCategory[] = [
       { name: "Python", level: 80 },
       { name: "Express.js", level: 85 },
       { name: "RESTful APIs", level: 90 },
-      { name: "GraphQL", level: 75 }
-    ]
+      { name: "GraphQL", level: 75 },
+    ],
   },
   {
     name: "Database & Cloud",
@@ -49,9 +49,9 @@ const skillCategories: SkillCategory[] = [
       { name: "MongoDB", level: 85 },
       { name: "PostgreSQL", level: 80 },
       { name: "AWS", level: 75 },
-      { name: "Docker", level: 80 },
-      { name: "Firebase", level: 85 }
-    ]
+      { name: "Supabase", level: 70 },
+      { name: "Firebase", level: 85 },
+    ],
   },
   {
     name: "Tools & Others",
@@ -60,9 +60,9 @@ const skillCategories: SkillCategory[] = [
       { name: "CI/CD", level: 80 },
       { name: "Agile/Scrum", level: 85 },
       { name: "Testing", level: 80 },
-      { name: "UI/UX Design", level: 75 }
-    ]
-  }
+      { name: "UI/UX Design", level: 65 },
+    ],
+  },
 ];
 
 const SkillBar = ({ skill, index }: SkillBarProps) => {
@@ -130,14 +130,18 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto mb-4 sm:mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-            A comprehensive overview of my technical expertise and proficiency levels
-            across various technologies and tools.
+            A comprehensive overview of my technical expertise and proficiency
+            levels across various technologies and tools.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {skillCategories.map((category, index) => (
-            <SkillCategory key={category.name} category={category} index={index} />
+            <SkillCategory
+              key={category.name}
+              category={category}
+              index={index}
+            />
           ))}
         </div>
 
@@ -154,17 +158,21 @@ const Skills = () => {
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
               "VS Code",
-              "Webpack",
+              "Cursor",
               "Redux",
               "Jest",
-              "Cypress",
+              "AWS",
               "Figma",
               "Material UI",
               "Bootstrap",
-              "Sass",
+              "Gitlab",
               "npm",
               "Yarn",
               "Linux",
+              "Postman",
+              "Axios",
+              "Android Studio",
+              "IOS",
             ].map((skill: string, index: number) => (
               <motion.span
                 key={skill}
