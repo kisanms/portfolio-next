@@ -16,7 +16,9 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -24,7 +26,9 @@ const Contact = () => {
     transition: { duration: 0.8 },
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -76,10 +80,10 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -87,13 +91,13 @@ const Contact = () => {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.error || 'Failed to send message');
+        throw new Error(result.error || "Failed to send message");
       }
 
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error("Error sending message:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -139,7 +143,10 @@ const Contact = () => {
             noValidate
           >
             <div>
-              <label htmlFor="name" className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base">
+              <label
+                htmlFor="name"
+                className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base"
+              >
                 Name
               </label>
               <input
@@ -158,12 +165,20 @@ const Contact = () => {
                 autoComplete="name"
               />
               {errors.name && (
-                <p id="name-error" className="mt-1 text-red-500 text-xs sm:text-sm font-medium">{errors.name}</p>
+                <p
+                  id="name-error"
+                  className="mt-1 text-red-500 text-xs sm:text-sm font-medium"
+                >
+                  {errors.name}
+                </p>
               )}
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base">
+              <label
+                htmlFor="email"
+                className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base"
+              >
                 Email
               </label>
               <input
@@ -182,12 +197,20 @@ const Contact = () => {
                 autoComplete="email"
               />
               {errors.email && (
-                <p id="email-error" className="mt-1 text-red-500 text-xs sm:text-sm font-medium">{errors.email}</p>
+                <p
+                  id="email-error"
+                  className="mt-1 text-red-500 text-xs sm:text-sm font-medium"
+                >
+                  {errors.email}
+                </p>
               )}
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base">
+              <label
+                htmlFor="message"
+                className="block text-gray-300 font-medium mb-1 sm:mb-2 text-sm sm:text-base"
+              >
                 Message
               </label>
               <textarea
@@ -205,7 +228,12 @@ const Contact = () => {
                 placeholder="Your message"
               ></textarea>
               {errors.message && (
-                <p id="message-error" className="mt-1 text-red-500 text-xs sm:text-sm font-medium">{errors.message}</p>
+                <p
+                  id="message-error"
+                  className="mt-1 text-red-500 text-xs sm:text-sm font-medium"
+                >
+                  {errors.message}
+                </p>
               )}
             </div>
 
@@ -217,9 +245,26 @@ const Contact = () => {
             >
               {isSubmitting ? (
                 <>
-                  <svg className="animate-spin -ml-1 mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  <svg
+                    className="animate-spin -ml-1 mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
                   </svg>
                   Sending...
                 </>
@@ -237,10 +282,22 @@ const Contact = () => {
                 role="alert"
               >
                 <div className="flex items-center">
-                  <svg className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0 text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                  <svg
+                    className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0 text-green-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
-                  <span>Your message has been sent successfully! I&apos;ll get back to you soon.</span>
+                  <span>
+                    Your message has been sent successfully! I&apos;ll get back
+                    to you soon.
+                  </span>
                 </div>
               </motion.div>
             )}
@@ -254,14 +311,37 @@ const Contact = () => {
                 role="alert"
               >
                 <div className="flex items-center">
-                  <svg className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0 text-red-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"></path>
+                  <svg
+                    className="h-4 w-4 sm:h-5 sm:w-5 mr-2 flex-shrink-0 text-red-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
-                  <span>There was an error sending your message. Please try again later.</span>
+                  <span>
+                    There was an error sending your message. Please try again
+                    later.
+                  </span>
                 </div>
               </motion.div>
             )}
           </motion.form>
+        </div>
+        <div className="mt-8 text-center">
+          <p className="text-2xl font-bold mb-4 bg-clip-text  text-gray-400">
+            Or you can reach me on: {}
+            <a
+              href="mailto:kisanmajumdar44@gmail.com"
+              className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+            >
+              kisanmajumdar44@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </section>
