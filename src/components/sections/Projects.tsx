@@ -5,6 +5,7 @@ import Image from "next/image";
 import thumbnailPort from "../../assets/thumnail port.png"; // Ensure this file exists
 import thumbnailPort2 from "../../assets/Feature g.png"; // Ensure this file exists
 import thumbnailPort3 from "../../assets/Feature g (1).png"; // Ensure this file exists
+import thumbnailPort4 from "../../assets/Feature g4.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -51,6 +52,15 @@ const projects: Project[] = [
     image: thumbnailPort3,
     link: "https://crosspix-wallpaper.netlify.app/home", // Update with actual link
     github: "https://github.com/kisanms/Crosspix_Wallpaper_App", // Update with actual link
+  },
+  {
+    title: "4. Edit-Expense App",
+    description:
+      "A platform where we can track our Projects, Income, Expense and Profit.",
+    tags: ["React-Native", "Firebase", "R-N Paper (UI)", "Expo-Go", "Formik"],
+    image: thumbnailPort4,
+    link: "https://sites.google.com/view/edit-expense/home", // Update with actual link
+    github: "https://github.com/kisanms/editexpense", // Update with actual link
   },
 ];
 
