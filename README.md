@@ -211,7 +211,7 @@ To customize this portfolio for your own use:
   <p>Designed & Developed with ❤️ and AI in 2025</p>
   <p>
     <a href="https://github.com/yourusername">GitHub</a> •
-    <a href="https://linkedin.com/in/yourusername">LinkedIn</a> •
+    <a href="https://linkedin.com/in/kisanmajumdar">LinkedIn</a> •
     <a href="https://twitter.com/yourusername">Twitter</a>
   </p>
 </div>
