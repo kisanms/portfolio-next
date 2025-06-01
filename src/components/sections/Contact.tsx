@@ -237,7 +237,7 @@ const Contact = () => {
         <div className="mt-2 text-center">
           <a
             href="mailto:kisanmajumdar44@gmail.com"
-            className="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600"
+            className="text-2xl sm:text-2xl md:text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600"
           >
             kisanmajumdar44@gmail.com
           </a>
