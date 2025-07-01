@@ -6,6 +6,7 @@ import thumbnailPort from "../../assets/thumnail port.png"; // Ensure this file 
 import thumbnailPort2 from "../../assets/Feature g.png"; // Ensure this file exists
 import thumbnailPort3 from "../../assets/Feature g (1).png"; // Ensure this file exists
 import thumbnailPort4 from "../../assets/Feature g4.png"; // Ensure this file exists
+import thumbnailPort5 from "../../assets/Feature 5.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -61,6 +62,15 @@ const projects: Project[] = [
     image: thumbnailPort4,
     link: "https://sites.google.com/view/edit-expense/home", // Update with actual link
     github: "https://github.com/kisanms/editexpense", // Update with actual link
+  },
+  {
+    title: "5. QRush - QR Code Generator",
+    description:
+      "A platform where users can generate and manage QR codes effortlessly.",
+    tags: ["React-Native", "Supabase", "Web-App", "Expo-Go", "QR Code"],
+    image: thumbnailPort5,
+    link: "https://q-rush.netlify.app/", // Update with actual link
+    github: "https://github.com/kisanms/QRush", // Update with actual link
   },
 ];
 
