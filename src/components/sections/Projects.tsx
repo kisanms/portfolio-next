@@ -7,6 +7,7 @@ import thumbnailPort2 from "../../assets/Feature g.png"; // Ensure this file exi
 import thumbnailPort3 from "../../assets/Feature g (1).png"; // Ensure this file exists
 import thumbnailPort4 from "../../assets/Feature g4.png"; // Ensure this file exists
 import thumbnailPort5 from "../../assets/qr thumnail.png"; // Ensure this file exists
+import thumbnailPort6 from "../../assets/f7.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -71,6 +72,15 @@ const projects: Project[] = [
     image: thumbnailPort5,
     link: "https://qrush-qr-generator.vercel.app/", // Update with actual link
     github: "https://github.com/kisanms/qrush-90effcbe", // Update with actual link
+  },
+  {
+    title: "6. Indian_Airforce Tribute(3d web)",
+    description:
+      "A tribute to glorify the India Airforce.",
+    tags: ["React", "Vite", "3D","MuleRun"],
+    image: thumbnailPort6,
+    link: "https://iaf-tribute.vercel.app/", // Update with actual link
+    // github: "https://github.com/kisanms/qrush-90effcbe", // Update with actual link
   },
 ];
 
