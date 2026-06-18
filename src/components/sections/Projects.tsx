@@ -76,11 +76,11 @@ const projects: Project[] = [
   {
     title: "6. Indian_Airforce Tribute(3d web)",
     description:
-      "A tribute to glorify the India Airforce.",
+      "A tribute to glorify the Indian Air Force.",
     tags: ["React", "Vite", "3D","MuleRun"],
     image: thumbnailPort6,
     link: "https://iaf-tribute.vercel.app/", // Update with actual link
-    github: "private",
+    github: "https://github.com/kisanms/iaf_tribute",
   },
 ];
 
