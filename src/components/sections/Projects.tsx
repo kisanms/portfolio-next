@@ -80,7 +80,6 @@ const projects: Project[] = [
     tags: ["React", "Vite", "3D","MuleRun"],
     image: thumbnailPort6,
     link: "https://iaf-tribute.vercel.app/", // Update with actual link
-    // github: "https://github.com/kisanms/qrush-90effcbe", // Update with actual link
   },
 ];
 
