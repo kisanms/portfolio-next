@@ -8,6 +8,7 @@ import thumbnailPort3 from "../../assets/Feature g (1).png"; // Ensure this file
 import thumbnailPort4 from "../../assets/Feature g4.png"; // Ensure this file exists
 import thumbnailPort5 from "../../assets/qr thumnail.png"; // Ensure this file exists
 import thumbnailPort6 from "../../assets/f7.png"; // Ensure this file exists
+import thumbnailPort7 from "../../assets/f8.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -81,6 +82,15 @@ const projects: Project[] = [
     image: thumbnailPort6,
     link: "https://iaf-tribute.vercel.app/", // Update with actual link
     github: "https://github.com/kisanms/iaf_tribute",
+  },
+  {
+    title: "7. Clearcut-Bg-Remove",
+    description:
+      "A Free platform to provide seamless removal of background, no signing in, no subscription.",
+    tags: ["React", "Vite", "AI","Node"],
+    image: thumbnailPort7,
+    link: "clearcut-bg-remove.vercel.app/", // Update with actual link
+    github: "https://github.com/kisanms/Ai-BG-remove",
   },
 ];
 
