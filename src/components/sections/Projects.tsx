@@ -89,7 +89,7 @@ const projects: Project[] = [
       "A Free platform to provide seamless removal g, compress, resize, image to text, no signing in, no subscription.",
     tags: ["React", "Vite", "AI","Node"],
     image: thumbnailPort7,
-    link: "https://clearcut-bg-remove.vercel.app/", // Update with actual link
+    link: "https://pixelfree-tool.vercel.app/", // Update with actual link
     github: "https://github.com/kisanms/Ai-BG-remove",
   },
 ];
