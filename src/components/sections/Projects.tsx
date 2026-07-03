@@ -84,9 +84,9 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/iaf_tribute",
   },
   {
-    title: "7. Clearcut-Bg-Remove",
+    title: "7. PixelFree-AI-free tool",
     description:
-      "A Free platform to provide seamless removal of background, no signing in, no subscription.",
+      "A Free platform to provide seamless removal g, compress, resize, image to text, no signing in, no subscription.",
     tags: ["React", "Vite", "AI","Node"],
     image: thumbnailPort7,
     link: "https://clearcut-bg-remove.vercel.app/", // Update with actual link
