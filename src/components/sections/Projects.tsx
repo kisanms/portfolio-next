@@ -84,7 +84,16 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/iaf_tribute",
   },
   {
-    title: "7. PixelFree-AI-free tool",
+    title: "7. LenaDena Ledger",
+    description:
+      "LenaDena Ledger is a smart digital khata app for Indian merchants, shopkeepers, and suppliers to track credit, payments,pending dues, and transaction history with automatic balance updates, WhatsApp receipts, and secure cloud sync.",
+    tags: ["React", "Vite", "Tanstack","Supabase"],
+    image: thumbnailPort7,
+    link: "https://lenadena-one-stop-solution.vercel.app/", // Update with actual link
+    github: "https://github.com/kisanms/Ai-BG-remove",
+  },
+  {
+    title: "8. ",
     description:
       "A Free platform to provide seamless removal g, compress, resize, image to text, no signing in, no subscription.",
     tags: ["React", "Vite", "AI","Node"],
