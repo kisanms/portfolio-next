@@ -85,7 +85,7 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/iaf_tribute",
   },
   {
-    title: "7. ",
+    title: "7. Pixelfree",
     description:
       "A Free platform to provide seamless removal g, compress, resize, image to text, no signing in, no subscription.",
     tags: ["React", "Vite", "AI","Node"],
