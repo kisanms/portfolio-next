@@ -9,6 +9,7 @@ import thumbnailPort4 from "../../assets/Feature g4.png"; // Ensure this file ex
 import thumbnailPort5 from "../../assets/qr thumnail.png"; // Ensure this file exists
 import thumbnailPort6 from "../../assets/f7.png"; // Ensure this file exists
 import thumbnailPort7 from "../../assets/f8.png"; // Ensure this file exists
+import thumbnailPort8 from "../../assets/f9.png"; // Ensure this file exists
 import { StaticImageData } from "next/image";
 
 // Project type definition
@@ -84,16 +85,7 @@ const projects: Project[] = [
     github: "https://github.com/kisanms/iaf_tribute",
   },
   {
-    title: "7. LenaDena Ledger",
-    description:
-      "LenaDena Ledger is a smart digital khata app for Indian merchants, shopkeepers, and suppliers to track credit, payments,pending dues, and transaction history with automatic balance updates, WhatsApp receipts, and secure cloud sync.",
-    tags: ["React", "Vite", "Tanstack","Supabase"],
-    image: thumbnailPort7,
-    link: "https://lenadena-one-stop-solution.vercel.app/", // Update with actual link
-    github: "https://github.com/kisanms/Ai-BG-remove",
-  },
-  {
-    title: "8. ",
+    title: "7. ",
     description:
       "A Free platform to provide seamless removal g, compress, resize, image to text, no signing in, no subscription.",
     tags: ["React", "Vite", "AI","Node"],
@@ -101,6 +93,15 @@ const projects: Project[] = [
     link: "https://pixelfree-tool.vercel.app/", // Update with actual link
     github: "https://github.com/kisanms/Ai-BG-remove",
   },
+   {
+    title: "8. LenaDena Ledger",
+    description:
+      " A smart digital khata app for Indian merchants and suppliers to track credit, payments,pending dues.",
+    tags: ["React", "Vite", "Tanstack","Supabase"],
+    image: thumbnailPort8,
+    link: "https://lenadena-one-stop-solution.vercel.app/", // Update with actual link
+    github: "https://github.com/kisanms/lenadena-ledger",
+  }
 ];
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
